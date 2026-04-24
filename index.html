@@ -7,7 +7,8 @@
   <title>Kancelari Eris | Elbasan</title>
   <meta name="description"
     content="Kancelari Eris — dyqani juaj i besuar për mjete shkollore në Elbasan. Qëllimi ynë është të ndihmojmë të rinjtë duke u ofruar produktet më të mira me çmimet më të arsyeshme.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%236EC5E8'/%3E%3Cg fill='%230033A0'%3E%3Crect x='22' y='30' width='10' height='40' rx='1' transform='rotate(-15 27 50)' /%3E%3Crect x='45' y='25' width='10' height='45' rx='1' /%3E%3Crect x='68' y='30' width='10' height='40' rx='1' transform='rotate(15 73 50)' /%3E%3Crect x='20' y='75' width='60' height='4' rx='1' /%3E%3C/g%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%236EC5E8'/%3E%3Cg fill='%230033A0'%3E%3Crect x='22' y='30' width='10' height='40' rx='1' transform='rotate(-15 27 50)' /%3E%3Crect x='45' y='25' width='10' height='45' rx='1' /%3E%3Crect x='68' y='30' width='10' height='40' rx='1' transform='rotate(15 73 50)' /%3E%3Crect x='20' y='75' width='60' height='4' rx='1' /%3E%3C/g%3E%3C/svg%3E">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
@@ -124,7 +125,7 @@
       transition: all 0.3s ease;
       background-color: var(--primary-dark);
       color: var(--text-light);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
 
     .logo {
@@ -145,8 +146,15 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.8); }
-      to { opacity: 1; transform: scale(1); }
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     .nav-links {
@@ -193,7 +201,7 @@
     .nav-links a:hover::after {
       width: 100%;
     }
-    
+
     .nav-links a:hover {
       color: var(--stripe-blue);
     }
@@ -243,21 +251,24 @@
       left: 0;
       width: 200%;
       height: 200%;
-      background: repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 20px,
-        rgba(0, 51, 160, 0.05) 20px,
-        rgba(0, 51, 160, 0.05) 40px
-      );
+      background: repeating-linear-gradient(45deg,
+          transparent,
+          transparent 20px,
+          rgba(0, 51, 160, 0.05) 20px,
+          rgba(0, 51, 160, 0.05) 40px);
       z-index: 0;
       pointer-events: none;
       animation: stripeMove 20s linear infinite;
     }
 
     @keyframes stripeMove {
-      0% { transform: translate(0, 0); }
-      100% { transform: translate(-50px, -50px); }
+      0% {
+        transform: translate(0, 0);
+      }
+
+      100% {
+        transform: translate(-50px, -50px);
+      }
     }
 
     .watermark-logo {
@@ -380,13 +391,11 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 10px,
-        rgba(0, 51, 160, 0.03) 10px,
-        rgba(0, 51, 160, 0.03) 20px
-      );
+      background: repeating-linear-gradient(45deg,
+          transparent,
+          transparent 10px,
+          rgba(0, 51, 160, 0.03) 10px,
+          rgba(0, 51, 160, 0.03) 20px);
       pointer-events: none;
     }
 
@@ -508,13 +517,11 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 15px,
-        rgba(0, 51, 160, 0.1) 15px,
-        rgba(0, 51, 160, 0.1) 30px
-      );
+      background: repeating-linear-gradient(45deg,
+          transparent,
+          transparent 15px,
+          rgba(0, 51, 160, 0.1) 15px,
+          rgba(0, 51, 160, 0.1) 30px);
     }
 
     .collage-img svg {
@@ -832,7 +839,7 @@
   <nav id="navbar">
     <a href="#" class="logo">
       <svg class="nav-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50" fill="#6EC5E8"/>
+        <circle cx="50" cy="50" r="50" fill="#6EC5E8" />
         <g fill="#0033A0">
           <rect x="22" y="30" width="10" height="40" rx="1" transform="rotate(-15 27 50)" />
           <rect x="45" y="25" width="10" height="45" rx="1" />
@@ -855,7 +862,7 @@
   <section class="hero">
     <div class="hero-stripes"></div>
     <svg class="watermark-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-      <circle cx="50" cy="50" r="50" fill="#6EC5E8"/>
+      <circle cx="50" cy="50" r="50" fill="#6EC5E8" />
       <g fill="#0033A0">
         <rect x="22" y="30" width="10" height="40" rx="1" transform="rotate(-15 27 50)" />
         <rect x="45" y="25" width="10" height="45" rx="1" />
@@ -882,41 +889,21 @@
           <path
             d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
         </svg>
-        <span class="card-label">Lapsa & Stilolapsa</span>
+        <span class="card-label">Mjete Shkollore</span>
       </div>
       <div class="card fade-up" style="transition-delay: 0.1s">
         <svg class="card-icon" viewBox="0 0 24 24">
           <path
-            d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z" />
+            d="M19 8h-1V3H6v5H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8 5h8v3H8V5zm8 14H8v-4h8v4zm2-8.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" />
         </svg>
-        <span class="card-label">Fletoret</span>
+        <span class="card-label">Printime cilësore A3 dhe A4 me/pa ngjyra</span>
       </div>
       <div class="card fade-up" style="transition-delay: 0.2s">
         <svg class="card-icon" viewBox="0 0 24 24">
           <path
-            d="M12 2c-3.31 0-6 2.69-6 6v2H4v12h16V10h-2V8c0-3.31-2.69-6-6-6zm-4 8V8c0-2.21 1.79-4 4-4s4 1.79 4 4v2H8zm8 10H8v-8h8v8z" />
+            d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.9 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z" />
         </svg>
-        <span class="card-label">Kuletat/Portofolet Shkollore</span>
-      </div>
-      <div class="card fade-up" style="transition-delay: 0.1s">
-        <svg class="card-icon" viewBox="0 0 24 24">
-          <path
-            d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
-        </svg>
-        <span class="card-label">Bojërat & Markerat</span>
-      </div>
-      <div class="card fade-up" style="transition-delay: 0.2s">
-        <svg class="card-icon" viewBox="0 0 24 24">
-          <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2zm0 2.82l5.24 12.63L12 15.6l-5.24 1.85L12 4.82z" />
-        </svg>
-        <span class="card-label">Mjetet Gjeometrike</span>
-      </div>
-      <div class="card fade-up" style="transition-delay: 0.3s">
-        <svg class="card-icon" viewBox="0 0 24 24">
-          <path
-            d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
-        </svg>
-        <span class="card-label">Letër & Karton</span>
+        <span class="card-label">Pije dhe Snacks</span>
       </div>
     </div>
   </section>
@@ -937,12 +924,12 @@
         <div class="collage-img">
           <div class="collage-tape"></div>
           <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <rect x="20" y="20" width="60" height="60" fill="#6EC5E8" />
-             <g fill="#0033A0">
-               <rect x="30" y="30" width="8" height="40" rx="1" />
-               <rect x="46" y="30" width="8" height="40" rx="1" />
-               <rect x="62" y="30" width="8" height="40" rx="1" />
-             </g>
+            <rect x="20" y="20" width="60" height="60" fill="#6EC5E8" />
+            <g fill="#0033A0">
+              <rect x="30" y="30" width="8" height="40" rx="1" />
+              <rect x="46" y="30" width="8" height="40" rx="1" />
+              <rect x="62" y="30" width="8" height="40" rx="1" />
+            </g>
           </svg>
         </div>
       </div>
@@ -994,8 +981,7 @@
         </div>
         <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
           <a href="https://www.instagram.com/kancelarieris?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            target="_blank" class="btn-stamp"
-            style="display: flex; align-items: center; gap: 0.5rem;">
+            target="_blank" class="btn-stamp" style="display: flex; align-items: center; gap: 0.5rem;">
             <svg style="width: 20px; height: 20px; fill: currentColor;" viewBox="0 0 24 24">
               <path
                 d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-3a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z" />
@@ -1018,7 +1004,7 @@
   <footer>
     <a href="#" class="footer-logo-wrap">
       <svg class="footer-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50" fill="#6EC5E8"/>
+        <circle cx="50" cy="50" r="50" fill="#6EC5E8" />
         <g fill="#0033A0">
           <rect x="22" y="30" width="10" height="40" rx="1" transform="rotate(-15 27 50)" />
           <rect x="45" y="25" width="10" height="45" rx="1" />
